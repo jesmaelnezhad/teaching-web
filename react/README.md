@@ -9,6 +9,7 @@
 - React creates a virtual DOM in memory and applies changes in that before changing the browser DOM
 
 ## Basic steps
+Start basic project template
 ```bash
 # create app
 npx create-react-app my-react-app
@@ -17,3 +18,15 @@ cd my-react-app
 npm start
 # now you see your app at localhost:3000 and change App.js to change your app
 ```
+
+Now remove all files in the `src` directory, and create a new `index.js` file with the following content:
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const myFirstElement = <h1>Hello React!</h1>
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myFirstElement);
+```
+
