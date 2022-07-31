@@ -30,3 +30,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(myFirstElement);
 ```
 
+Also, you could only keep `<div id="root"></div>` in the body of `public/index.html` **which is the target of the render function.**
+
+## Things to learn in React
+- Learn JSX
+	- Basic JSX usage
+	- Using `{...}` for expressions in JSX
+	- Using `(...)` for multi-line HTML
+	- The one-top-level-element rule and the usage of fragments
+	- HTML keyword `class` is replaced by `className`
