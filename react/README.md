@@ -39,3 +39,10 @@ Also, you could only keep `<div id="root"></div>` in the body of `public/index.h
 	- Using `(...)` for multi-line HTML
 	- The one-top-level-element rule and the usage of fragments
 	- HTML keyword `class` is replaced by `className`
+- Components
+	- Function components
+	- Class components
+		- extend `React.Component` and implement a `render()` function
+		- `props` are always passed to the consutructor class and must be passed to `super`
+		- When `state` is changed, the component is re-rendered. Use `this.setState()` to change state.
+	- Lifecycle: mounting, updating, unmounting
