@@ -9,6 +9,11 @@ const mySecondElement = React.createElement('h1', {}, 'I do not use JSX!');
 
 class Header extends React.Component {
 
+  // Event function for onClick used in render
+  eventFunction = (message, event) => {
+    alert(message + " Event type is " + event.type);
+  }
+
   // mounting 1
   constructor(props) {
     super(props);
@@ -34,7 +39,9 @@ class Header extends React.Component {
   render() {
     alert("render")
     return (
+      <div onClick={(event) => this.eventFunction("Hi!!!", event)} >
       <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+      </div>
     );
   }
 

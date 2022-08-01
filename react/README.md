@@ -34,7 +34,7 @@ Also, you could only keep `<div id="root"></div>` in the body of `public/index.h
 
 ## Things to learn in React
 - Learn JSX
-	- Basic JSX usage
+	- Basic JSX usage (using mixed JS and XML, if statements, etc.)
 	- Using `{...}` for expressions in JSX
 	- Using `(...)` for multi-line HTML
 	- The one-top-level-element rule and the usage of fragments
@@ -46,3 +46,7 @@ Also, you could only keep `<div id="root"></div>` in the body of `public/index.h
 		- `props` are always passed to the consutructor class and must be passed to `super`
 		- When `state` is changed, the component is re-rendered. Use `this.setState()` to change state.
 	- Lifecycle: mounting, updating, unmounting
+- Events
+- Forms (inputs and handlers)
+- Router
+- CSS and Sass styling
